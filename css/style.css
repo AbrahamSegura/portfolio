@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Cascadi Code PL', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+:root {
+    --itemSize: 1.8em;
+    --size: .525em;
+    --sizeMovile: 1.2em;
+    --sizeTitle: 2em;
+    --colorBackgorundLightPrimary: #08c;
+    --colorBackgorundLightPrimaryAlpha: #0088cc74;
+    --colorBackgorundLightSecondary: #5dc3f7;
+    --colorBackgorundLightSecondaryAlpha: #5dc3f774;
+    --letterColorLight: #fafafa;
+    --letterShadow: #020216;
+}
+
+body {
+    background-image:
+        radial-gradient(var(--colorBackgorundLightSecondaryAlpha) 5px, transparent 5px), radial-gradient(var(--colorBackgorundLightPrimaryAlpha) 5px, transparent 5px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+    background-color: #415276;;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--sizeMovile);
+}
+
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--letterColorLight);
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-var {
+    background-color: var(--colorBackgorundLightPrimary);
+    padding-left: var(--itemSize);
+    border-radius: var(--size);
+}
+
+.btn {
+    display: none;
+    color: transparent;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    margin: var(--size);
+}
+
+.nav-list-item {
+    margin: 0 .1em;
+    font-size: var(--sizeMovile);
+    padding: .1em var(--size);
+    border-radius: var(--size);
+}
+
+.nav-list-item:hover {
+    transition: box-shadow .5s ease, background-color .3s ease;
+    background-color: var(--colorBackgorundLightSecondary);
+    box-shadow: 2px 2px 0 var(--letterColorLight);
+
+}
+
+.nav-list-item a {
+    color: var(--letterColorLight);
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.main {
+    margin: auto;
+    background-color: #00000020;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--size);
+}
+
+.about-content {
+    max-width: 75%;
+    height: 100%;
+    padding: var(--sizeMovile) 0;
+    text-align: justify;
+    color: var(--letterColorLight);
+}
+
+.about-title {
+    font-size: var(--sizeTitle);
+    text-align: center;
+    margin-bottom: .5em;
+    text-shadow: 0 0 .2em var(--letterShadow);
+    color: var(--letterColorLight);
+}
+
+.footer {
+    height: 17vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--colorBackgorundLightPrimary);
+}

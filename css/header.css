@@ -1,0 +1,73 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.title {
+    grid-column: 1/ span 5;
+    margin: auto;
+    font-size: var(--sizeTitle);
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    color: var(--letterColorLight);
+}
+
+
+#hidden {
+    overflow: hidden;
+    width: 0;
+    animation: incremate 3s alternate infinite ease-out;
+}
+
+@keyframes incremate {
+    16.66% {
+        border-right: 2px solid transparent;
+        width: var(--size)
+    }
+
+    18.66% {
+        border-right: 2px solid #000;
+    }
+
+    33.33% {
+        border-right: 2px solid transparent;
+        width: calc(var(--size)*2);
+    }
+
+    35% {
+        border-right: 2px solid #000;
+    }
+
+    50.01% {
+        border-right: 2px solid transparent;
+        width: calc(var(--size)*3);
+    }
+
+    52% {
+        border-right: 2px solid #000;
+    }
+
+    66.68% {
+        border-right: 2px solid transparent;
+        width: calc(var(--size)*4);
+    }
+
+    68% {
+        border-right: 2px solid #000;
+    }
+
+    83.35% {
+        border-right: 2px solid transparent;
+        width: calc(var(--size)*5);
+    }
+
+    85% {
+        border-right: 2px solid #000;
+    }
+
+    100% {
+        border-right: 2px solid transparent;
+        width: calc(var(--size)*6.5);
+    }
+}

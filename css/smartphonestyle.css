@@ -1,0 +1,99 @@
+@media screen and (max-width: 1200px){
+    body{
+        font-size: var(--sizeMovile);
+    }
+    .Proyect {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 23% 7% 55%;
+        width: 100%;
+        background-color: #0003;
+    }
+    .proyect-title{
+        font-size: 55px;
+        padding: 0;
+        margin: auto;
+    }
+    .proyect-def{
+        padding: 1em;
+    }
+    .proyect-link{
+        margin: 0 0 5px 5%;
+        padding: 0.2em 0;
+        width: 90%;
+    }
+    
+    .proyect-img{
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+}
+@media screen and (max-width: 800px) {
+    header {
+        margin: var(--sizeMovile) 0;
+    }
+
+    .nav-var {
+        width: 90%;
+        height: 100vh;
+        padding-bottom: var(--sizeMovile);
+        transform: translateX(-100vw);
+        opacity: 0;
+        z-index: 5;
+        transition: transform .2s ease-out, opacity .5s ease;
+        position: fixed;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        display: flex;
+        padding-bottom: var(--size);
+        margin: 0;
+    }
+
+    .nav-list-item {
+        padding: var(--size) 0;
+        font-size: var(--sizeMovile);
+    }
+
+    .show {
+        text-align: center;
+        opacity: .9;
+        transform: translateX(-17vw);
+        transition: transform .2s ease-out, opacity .5s ease;
+        z-index: 5;
+    }
+
+    .btn {
+        user-select: none;
+        display: flex;
+        background-color: var(--colorBackgorundLightPrimary);
+        width: calc(var(--itemSize) + 0.5em);
+        height: calc(var(--itemSize) + 0.5em);
+        top:45px;
+        right: 25px;
+        position: fixed;
+        z-index: 10;
+        border-radius: var(--size);
+        text-align: center;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    .line {
+        width: var(--itemSize);
+        height: var(--itemSize);
+        font-size: var(--itemSize);
+        text-shadow: 0 -.25em 0 var(--letterColorLight), 0 -.5em 0 var(--letterColorLight), 0 -.75em 0 var(--letterColorLight);
+    }
+
+    .btn:active {
+        background-color: var(--colorBackgorundLightSecondary);
+    }
+
+    .card-conteiner .card {
+        min-width: 300px;
+        min-height: 300px;
+    }
+   
+}

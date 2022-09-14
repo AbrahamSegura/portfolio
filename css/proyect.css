@@ -1,0 +1,45 @@
+.proyect-title{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: var(--sizeTitle);
+    text-shadow: 0 0 0.2em var(--letterShadow);
+    padding: 0.25em 0 0 1em;
+}
+
+.proyect-content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem;
+    color: var(--letterColorLight);
+}
+.Proyect{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 60% 20%;
+    width: 100%;
+    background-color: #0003;
+    border-radius: var(--size);
+}
+
+.proyect-def{
+    padding: var(--size) 5em 0 2em;
+    text-align: justify;
+    justify-content: center;
+}
+
+.proyect-img{
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+
+.proyect-link{
+    width: 5em;
+    height: 1.5em;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--colorBackgorundLightPrimary);
+    margin-left: 1em;
+}
