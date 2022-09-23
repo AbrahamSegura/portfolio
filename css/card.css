@@ -106,3 +106,13 @@
     line-height: calc(var(--sizeMovile));
     font-weight: 300;
 }
+
+.btn-card{
+    margin: 5px;
+    background-color: var(--colorBackgorundLightSecondary);
+    display: flex;
+    width: 3.5em;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+}
