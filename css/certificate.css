@@ -2,8 +2,6 @@
     display: flex;
     width: 90%;
     align-items: center;
-    /* grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 400px); */
 }
 .list-studies{
     display: flex;
