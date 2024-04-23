@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    aspect-ratio: 1/3;
     margin: 1em 0;
 }
 
@@ -43,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit:auto;
+    object-fit: cover;
 }
 
 .card-conteiner .card .contentBox::before {
@@ -111,8 +112,10 @@
     margin: 5px;
     background-color: var(--colorBackgorundLightSecondary);
     display: flex;
-    width: 3.5em;
+    width: 5.5em;
     height: auto;
     text-align: center;
+    padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }

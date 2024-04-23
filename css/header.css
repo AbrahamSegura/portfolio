@@ -6,7 +6,7 @@ header {
 .title {
     grid-column: 1/ span 5;
     margin: auto;
-    font-size: var(--sizeTitle);
+    font-size: var(--sizeHeaderTitle);
     font-weight: 700;
     display: flex;
     text-align: center;

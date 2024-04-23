@@ -36,10 +36,9 @@
 }
 
 .proyect-link{
-    width: 5em;
+    max-width: 5em;
     height: 1.5em;
     text-align: center;
-    justify-content: center;
     background-color: var(--colorBackgorundLightPrimary);
     margin-left: 1em;
 }
