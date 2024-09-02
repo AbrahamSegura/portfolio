@@ -16,10 +16,10 @@
     border: 1px solid #555;
     border-radius: 5%;
     overflow: hidden;
+    transition: 0.5s ease;
 }
 
 .card-conteiner .card:hover {
-    transition: 0.5s ease;
     box-shadow: 5px 5px 5px #555;
 }
 

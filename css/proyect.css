@@ -24,8 +24,6 @@
 
 .proyect-def{
     padding: var(--size) 5em 0 2em;
-    text-align: justify;
-    justify-content: center;
 }
 
 .proyect-img{

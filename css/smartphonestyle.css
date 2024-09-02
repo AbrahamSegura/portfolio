@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px){
+@media (width <= 1200px) {
     body{
         font-size: var(--sizeMovile);
     }
@@ -28,7 +28,7 @@
         grid-row: 4/5;
     }
 }
-@media screen and (max-width: 800px) {
+@media (width <= 800px) {
     header {
         margin: var(--sizeMovile) 0;
     }
