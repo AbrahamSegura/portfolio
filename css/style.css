@@ -20,6 +20,12 @@
     --letterShadow: #020216;
 }
 
+@font-face {
+    font-family: 'Consola';
+    src: url('/public/ConsolaMono-Book.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     background-image:
         radial-gradient(var(--colorBackgorundLightSecondaryAlpha) 5px, transparent 5px), radial-gradient(var(--colorBackgorundLightPrimaryAlpha) 5px, transparent 5px);
@@ -67,13 +73,13 @@ a{
     font-size: var(--sizeMovile);
     padding: .1em var(--size);
     border-radius: var(--size);
+    transition: box-shadow .2s ease-in, background-color .3s ease-in;
 }
 
 .nav-list-item:hover {
-    transition: box-shadow .5s ease, background-color .3s ease;
     background-color: var(--colorBackgorundLightSecondary);
     box-shadow: 2px 2px 0 var(--letterColorLight);
-
+    cursor: pointer;
 }
 
 .nav-list-item a {
@@ -94,11 +100,15 @@ a{
 }
 
 .about-content {
-    max-width: 75%;
+    max-width: 65%;
     height: 100%;
     padding: var(--sizeMovile) 0;
-    text-align: justify;
+    text-align: center;
     color: var(--letterColorLight);
+}
+
+.about {
+    font-size: 20px;
 }
 
 .about-title {
