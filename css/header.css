@@ -4,20 +4,50 @@ header {
 }
 
 .title {
-    grid-column: 1/ span 5;
+    grid-column: 1 / span 5;
     margin: auto;
     font-size: var(--sizeHeaderTitle);
     font-weight: 700;
     display: flex;
     text-align: center;
     color: var(--letterColorLight);
+    max-height: 70px;
+    padding: 7px 0;
+    text-shadow: 0 0 5px var(--letterShadow);
 }
 
 
 #hidden {
+    display: flex;
+    white-space: nowrap;
     overflow: hidden;
+    border-right: 2px solid #000;
+    font-family: 'Consola';
     width: 0;
-    animation: incremate 3s alternate infinite ease-out;
+    transition: width .3s ease-in;
+    animation: blink-caret .5s step-end infinite;
+}
+
+#hidden > div{
+    display: flex;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 7ch;
+    }
+
+    /* Ajusta el número de caracteres a mostrar */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    25%, 75% { border-color: #333333cb }
+    50% { border-color: #000 }
 }
 
 @keyframes incremate {
